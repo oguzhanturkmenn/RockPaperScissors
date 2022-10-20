@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rakipSecimText"
+        android:layout_width="239dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="92dp"
+        android:text="Rakibin Seçimi"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="239dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="188dp"
+        android:text="Sonuç:"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oyuncuSecimText"
+        android:layout_width="239dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="292dp"
+        android:text="Bizim Seçimimiz"
+        android:textSize="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="107dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="-7dp"
+        android:layout_marginBottom="100dp"
+        android:onClick="tasaTiklandi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/paperImage"
+        android:layout_width="118dp"
+        android:onClick="kagidaTiklandi"
+        android:layout_height="124dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rockImage"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageView
+        android:id="@+id/scissorsImage"
+        android:layout_width="122dp"
+        android:layout_height="130dp"
+        android:onClick="makasaTiklandi"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paperImage"
+        app:srcCompat="@drawable/scissors" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
